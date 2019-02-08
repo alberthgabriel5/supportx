@@ -118,7 +118,7 @@
                                 <li><a href="index.html">Home</a></li>
                                           <li><a href="createTicket.aspx">Create ticket</a></li>
                                           <li><a href="listTicket.aspx">List tickets</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                               
                             </ul>
                         </div>
                     </nav>
@@ -131,14 +131,12 @@
         <!-- header -->
 
         <br />
-        <form id="Form2" runat="server">
-
         <div class="container">
             <center>
                    Create ticket
                   <br /> 
                <br />
-                Company name:    <input id="companyName" type="text" required="required" requiered Runat="server"/><br />
+                Company name:    <input id="companyId" type="text" required="required" requiered Runat="server"/><br />
             <br />
 
          <br />
@@ -150,11 +148,11 @@
            Attached file:        <input id="file" type="file" /><br>
             
                       <center>
-                           <asp:Button ID="send"  Text="Send"  runat="server" OnClick="send_Click" />
-                          <asp:Button ID="Reset" type="reset" value="Cancel" runat="server" OnClick="Reset_Click"/>&nbsp;</center>
+                           <asp:Button ID="send"  Text="Submit"  runat="server" OnClick="send_Click" />
+                          <asp:Button ID="Reset" type="reset" Text="Cancel" runat="server" OnClick="Reset_Click"/>&nbsp;</center>
         </div>
 
-            </form>
+            
         <br />
 
 

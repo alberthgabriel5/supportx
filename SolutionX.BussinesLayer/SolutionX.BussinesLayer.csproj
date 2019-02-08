@@ -53,10 +53,6 @@
       <Project>{781485fa-8bfb-4cfa-bd02-13eb8bf0aa44}</Project>
       <Name>SolutionX.DomainEntities</Name>
     </ProjectReference>
-    <ProjectReference Include="..\SolutionX\SolutionX.csproj">
-      <Project>{cb691ef5-aca9-4a59-a085-fa63cdaf22c9}</Project>
-      <Name>SolutionX</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,5 +1,6 @@
 ﻿using SolutionX.DomainEntities;
 using System;
+
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -12,7 +13,7 @@ using System.Web;
 
 namespace SolutionX.BussinesLayer
 {
-    class ticketBussines
+   public class ticketBussines
     {
         TicketData ticketData = new TicketData();
         List<Ticket> ticketsList = new List<Ticket>();

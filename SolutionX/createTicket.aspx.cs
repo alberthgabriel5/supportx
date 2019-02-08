@@ -5,13 +5,13 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using SolutionX.DomainEntities;
-
+using SolutionX.BussinesLayer;
 
 namespace SolutionX
 {
     public partial class createTicket : System.Web.UI.Page
     {
-         
+        ticketBussines ticketBussines=new ticketBussines();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -20,15 +20,18 @@ namespace SolutionX
 
         protected void send_Click(object sender, EventArgs e)
         {
+            Ticket t = new Ticket();
+            t.idCostumer = 1;
+            t.description = detail.Value;
 
-            string detailT=detail.Value;
-            
+            ticketBussines.CreateTicket(t);
         }
 
         protected void Reset_Click(object sender, EventArgs e)
         {
             detail.Value = null;
-            companyName.Value = null;
+            companyId.Value = null;
+
         }
     }
 }
