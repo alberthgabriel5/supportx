@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="createTicket.aspx.cs" Inherits="SolutionX.createTicket" %>
+<!DOCTYPE html>
 
 
 <html lang="en">
@@ -42,19 +43,7 @@
             display: inline-block;
         }
 
-        input[type=submit] {
-            background-color: #164799;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            float: right;
-        }
-
-            input[type=submit]:hover {
-                background-color: #164799;
-            }
+       
 
         .container {
             border-radius: 5px;
@@ -161,7 +150,7 @@
            Attached file:        <input id="file" type="file" /><br>
             
                       <center>
-                          <asp:Button ID="send" Runat="server" Text="Send"  />
+                           <asp:Button ID="send"  Text="Send"  runat="server" OnClick="send_Click" />
                           <input id="Reset1" type="reset" value="Cancel"/>&nbsp;</center>
         </div>
 
