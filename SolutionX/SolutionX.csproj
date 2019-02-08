@@ -81,6 +81,16 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SolutionX.DataAccess\SolutionX.DataAccess.csproj">
+      <Project>{44A7B337-FD83-44BC-8235-20C448152AB0}</Project>
+      <Name>SolutionX.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SolutionX.DomainEntities\SolutionX.DomainEntities.csproj">
+      <Project>{781485FA-8BFB-4CFA-BD02-13EB8BF0AA44}</Project>
+      <Name>SolutionX.DomainEntities</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
