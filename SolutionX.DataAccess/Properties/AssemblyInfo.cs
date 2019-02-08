@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // La información general de un ensamblado se controla mediante el siguiente 
 // conjunto de atributos. Cambie estos valores de atributo para modificar la información
 // asociada con un ensamblado.
-[assembly: AssemblyTitle("SolutionX.BussinesLayer")]
+[assembly: AssemblyTitle("SolutionX.DataAccess")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("SolutionX.BussinesLayer")]
+[assembly: AssemblyProduct("SolutionX.DataAccess")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // El siguiente GUID sirve como id. de typelib si este proyecto se expone a COM.
-[assembly: Guid("174fd5f9-2e06-44bc-8353-fb3ecb66d386")]
+[assembly: Guid("44a7b337-fd83-44bc-8235-20c448152ab0")]
 
 // La información de versión de un ensamblado consta de los cuatro valores siguientes:
 //
