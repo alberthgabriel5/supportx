@@ -117,8 +117,7 @@
                             <ul class="nav navbar-nav">
                                 <li><a href="index.html">Home</a></li>
                                           <li><a href="createTicket.aspx">Create ticket</a></li>
-                                          <li><a href="listTicket.aspx">List tickets</a></li>
-                               
+                                          <li><a href="listTicket.aspx">List tickets</a></li>                               
                             </ul>
                         </div>
                     </nav>

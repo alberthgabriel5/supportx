@@ -126,8 +126,7 @@
                             <ul class="nav navbar-nav">
                                 <li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
                                 <li><a href="createTicket.aspx">Create ticket</a></li>
-                                <li><a href="listTicket.aspx">List tickets</a></li>
-                                
+                                <li><a href="listTicket.aspx">List tickets</a></li>                                
                             </ul>
                         </div>
                     </nav>
