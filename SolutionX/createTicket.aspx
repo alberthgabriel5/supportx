@@ -151,7 +151,7 @@
             
                       <center>
                            <asp:Button ID="send"  Text="Send"  runat="server" OnClick="send_Click" />
-                          <input id="Reset1" type="reset" value="Cancel"/>&nbsp;</center>
+                          <asp:Button ID="Reset" type="reset" value="Cancel" runat="server" OnClick="Reset_Click"/>&nbsp;</center>
         </div>
 
             </form>

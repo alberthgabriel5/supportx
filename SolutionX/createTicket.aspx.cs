@@ -24,5 +24,11 @@ namespace SolutionX
             string detailT=detail.Value;
             
         }
+
+        protected void Reset_Click(object sender, EventArgs e)
+        {
+            detail.Value = null;
+            companyName.Value = null;
+        }
     }
 }
