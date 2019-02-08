@@ -149,6 +149,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+
+
     <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <ItemGroup>
@@ -158,6 +160,7 @@
     </ProjectReference>
     <ProjectReference Include="..\SolutionX.DomainEntities\SolutionX.DomainEntities.csproj">
       <Project>{781485fa-8bfb-4cfa-bd02-13eb8bf0aa44}</Project>
+
       <Name>SolutionX.DomainEntities</Name>
     </ProjectReference>
   </ItemGroup>
