@@ -131,20 +131,20 @@
         <!-- header -->
 
         <br />
-
+        <form id="Form2" runat="server">
 
         <div class="container">
             <center>
                    Create ticket
-                  <br />
+                  <br /> 
                <br />
-             Company name:    <input id="companyName" type="text" required="required" requiered /><br />
+                Company name:    <input id="companyName" type="text" required="required" requiered Runat="server"/><br />
             <br />
 
          <br />
            Request detail:   <br />
                       <center>
-                      <textarea id="TextArea1" cols="20" name="S1" rows="1" required="required" requiered></textarea><br />
+                      <textArea id="detail" cols="20" name="S1" rows="1" required="required" requiered Runat="server"></textArea><br />
                       </center> 
             
            Attached file:        <input id="file" type="file" /><br>
@@ -154,7 +154,7 @@
                           <input id="Reset1" type="reset" value="Cancel"/>&nbsp;</center>
         </div>
 
-
+            </form>
         <br />
 
 

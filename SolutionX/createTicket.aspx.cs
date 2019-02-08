@@ -18,6 +18,7 @@ namespace SolutionX
         protected void send_Click(object sender, EventArgs e)
         {
 
+            string detailT=detail.Value;
 
         }
     }
