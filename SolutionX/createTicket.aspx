@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="createTicket.aspx.cs" Inherits="SolutionX.createTicket" %>
+<!DOCTYPE html>
 
 
 <html lang="en">
@@ -42,19 +43,7 @@
             display: inline-block;
         }
 
-        input[type=submit] {
-            background-color: #164799;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            float: right;
-        }
-
-            input[type=submit]:hover {
-                background-color: #164799;
-            }
+       
 
         .container {
             border-radius: 5px;
@@ -142,30 +131,30 @@
         <!-- header -->
 
         <br />
-
+        <form id="Form2" runat="server">
 
         <div class="container">
             <center>
                    Create ticket
-                  <br />
+                  <br /> 
                <br />
-             Company name:    <input id="companyName" type="text" required="required" requiered /><br />
+                Company name:    <input id="companyName" type="text" required="required" requiered Runat="server"/><br />
             <br />
 
          <br />
            Request detail:   <br />
                       <center>
-                      <textarea id="TextArea1" cols="20" name="S1" rows="1" required="required" requiered></textarea><br />
+                      <textArea id="detail" cols="20" name="S1" rows="1" required="required" requiered Runat="server"></textArea><br />
                       </center> 
             
            Attached file:        <input id="file" type="file" /><br>
             
                       <center>
-                          <asp:Button ID="send" Runat="server" Text="Send"  />
-                          <input id="Reset1" type="reset" value="Cancel"/>&nbsp;</center>
+                           <asp:Button ID="send"  Text="Send"  runat="server" OnClick="send_Click" />
+                          <asp:Button ID="Reset" type="reset" value="Cancel" runat="server" OnClick="Reset_Click"/>&nbsp;</center>
         </div>
 
-
+            </form>
         <br />
 
 

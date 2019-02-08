@@ -151,6 +151,16 @@
   <ItemGroup>
     <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SolutionX.BussinesLayer\SolutionX.BussinesLayer.csproj">
+      <Project>{174fd5f9-2e06-44bc-8353-fb3ecb66d386}</Project>
+      <Name>SolutionX.BussinesLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SolutionX.DomainEntities\SolutionX.DomainEntities.csproj">
+      <Project>{781485fa-8bfb-4cfa-bd02-13eb8bf0aa44}</Project>
+      <Name>SolutionX.DomainEntities</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
