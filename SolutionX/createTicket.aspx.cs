@@ -4,12 +4,15 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using SolutionX.DomainEntities;
 
 
 namespace SolutionX
 {
     public partial class createTicket : System.Web.UI.Page
     {
+         
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -19,7 +22,7 @@ namespace SolutionX
         {
 
             string detailT=detail.Value;
-
+            
         }
     }
 }
