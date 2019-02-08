@@ -64,7 +64,11 @@ namespace SolutionX.DataAccess
                     ticketsList.Add(ticket);
                 }
                 connectionSupportX.Close();
-               
+                Console.WriteLine(ticketsList.Count);
+                for (int i = 0; i < ticketsList.Count; i++)
+                {
+                    Console.WriteLine("LA DESCRIPCION DEL TICKET ES: "+ticketsList[i].description);
+                }
                 return ticketsList;
             }
         }
