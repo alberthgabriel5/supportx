@@ -1,0 +1,243 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2E7E75CB-8A69-4E8D-AFF5-BA81F08064F4}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SolutionX.WEB</RootNamespace>
+    <AssemblyName>SolutionX.WEB</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CordinatorPK\index.aspx" />
+    <Content Include="css\animate.min.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\flexslider.css" />
+    <Content Include="css\flickity.min.css" />
+    <Content Include="css\fonts\Stroke-Gap-Icons.svg" />
+    <Content Include="css\ie.css" />
+    <Content Include="css\normalize.min.css" />
+    <Content Include="css\print.css" />
+    <Content Include="css\screen.css" />
+    <Content Include="css\styles.css" />
+    <Content Include="img\article-01.jpg" />
+    <Content Include="img\article-02.jpg" />
+    <Content Include="img\article-03.jpg" />
+    <Content Include="img\article-04.jpg" />
+    <Content Include="img\article-05.jpg" />
+    <Content Include="img\article-06.jpg" />
+    <Content Include="img\crew-blaz-robar.jpg" />
+    <Content Include="img\crew-dude.jpg" />
+    <Content Include="img\crew-mary-lou.jpg" />
+    <Content Include="img\crew-peter-finlan.jpg" />
+    <Content Include="img\dd-arrow.png" />
+    <Content Include="img\favicon\android-chrome-144x144.png" />
+    <Content Include="img\favicon\android-chrome-192x192.png" />
+    <Content Include="img\favicon\android-chrome-36x36.png" />
+    <Content Include="img\favicon\android-chrome-48x48.png" />
+    <Content Include="img\favicon\android-chrome-72x72.png" />
+    <Content Include="img\favicon\android-chrome-96x96.png" />
+    <Content Include="img\favicon\apple-touch-icon-114x114.png" />
+    <Content Include="img\favicon\apple-touch-icon-120x120.png" />
+    <Content Include="img\favicon\apple-touch-icon-144x144.png" />
+    <Content Include="img\favicon\apple-touch-icon-152x152.png" />
+    <Content Include="img\favicon\apple-touch-icon-180x180.png" />
+    <Content Include="img\favicon\apple-touch-icon-57x57.png" />
+    <Content Include="img\favicon\apple-touch-icon-60x60.png" />
+    <Content Include="img\favicon\apple-touch-icon-72x72.png" />
+    <Content Include="img\favicon\apple-touch-icon-76x76.png" />
+    <Content Include="img\favicon\apple-touch-icon-precomposed.png" />
+    <Content Include="img\favicon\apple-touch-icon.png" />
+    <Content Include="img\favicon\browserconfig.xml" />
+    <Content Include="img\favicon\favicon-16x16.png" />
+    <Content Include="img\favicon\favicon-194x194.png" />
+    <Content Include="img\favicon\favicon-32x32.png" />
+    <Content Include="img\favicon\favicon-96x96.png" />
+    <Content Include="img\favicon\favicon.ico" />
+    <Content Include="img\favicon\mstile-144x144.png" />
+    <Content Include="img\favicon\mstile-150x150.png" />
+    <Content Include="img\favicon\mstile-310x150.png" />
+    <Content Include="img\favicon\mstile-310x310.png" />
+    <Content Include="img\favicon\mstile-70x70.png" />
+    <Content Include="img\favicon\safari-pinned-tab.svg" />
+    <Content Include="img\freebie-03.jpg" />
+    <Content Include="img\freebie-04.jpg" />
+    <Content Include="img\hero-bg-01.jpg" />
+    <Content Include="img\hero-bg-02.jpg" />
+    <Content Include="img\hero-bg-03.jpg" />
+    <Content Include="img\landio-freebie.jpg" />
+    <Content Include="img\sedna-freebie.jpg" />
+    <Content Include="img\stats-bg.jpg" />
+    <Content Include="img\synthetica-logo%402x.png" />
+    <Content Include="img\synthetica-logo.png" />
+    <Content Include="img\texture-shapes-bg.png" />
+    <Content Include="img\video-cover.jpg" />
+    <Content Include="js\min\bootstrap.min.js" />
+    <Content Include="js\min\flickity.pkgd.min.js" />
+    <Content Include="js\min\jquery-1.11.2.min.js" />
+    <Content Include="js\min\jquery.flexslider-min.js" />
+    <Content Include="js\min\jquery.waypoints.min.js" />
+    <Content Include="js\min\modernizr-2.8.3-respond-1.4.2.min.js" />
+    <Content Include="js\min\retina.min.js" />
+    <Content Include="js\min\scripts-min.js" />
+    <Content Include="js\min\toucheffects-min.js" />
+    <Content Include="js\min\video-min.js" />
+    <Content Include="js\scripts.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cordinator.Master.cs">
+      <DependentUpon>Cordinator.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cordinator.Master.designer.cs">
+      <DependentUpon>Cordinator.Master</DependentUpon>
+    </Compile>
+    <Compile Include="CordinatorPK\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CordinatorPK\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Cordinator.Master" />
+    <Content Include="css\.DS_Store" />
+    <Content Include="css\fonts\.DS_Store" />
+    <Content Include="css\fonts\Stroke-Gap-Icons.eot" />
+    <Content Include="css\fonts\Stroke-Gap-Icons.ttf" />
+    <Content Include="css\fonts\Stroke-Gap-Icons.woff" />
+    <Content Include="img\.DS_Store" />
+    <Content Include="img\favicon\manifest.json" />
+    <Content Include="js\.DS_Store" />
+    <Content Include="js\min\.DS_Store" />
+    <None Include="packages.config" />
+    <Content Include="scss\.DS_Store" />
+    <Content Include="scss\.sass-cache\a98e557b9da12e475a70ffaba41c5ccd5a2449c7\styles.scssc" />
+    <Content Include="scss\ie.scss" />
+    <Content Include="scss\partials\_buttons.scss" />
+    <Content Include="scss\partials\_colors.scss" />
+    <Content Include="scss\partials\_layout.scss" />
+    <Content Include="scss\partials\_typography.scss" />
+    <Content Include="scss\partials\_video_skin.scss" />
+    <Content Include="scss\print.scss" />
+    <Content Include="scss\screen.scss" />
+    <Content Include="scss\styles.scss" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SolutionX.BussinesLayer\SolutionX.BussinesLayer.csproj">
+      <Project>{174fd5f9-2e06-44bc-8353-fb3ecb66d386}</Project>
+      <Name>SolutionX.BussinesLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SolutionX.DomainEntities\SolutionX.DomainEntities.csproj">
+      <Project>{781485fa-8bfb-4cfa-bd02-13eb8bf0aa44}</Project>
+      <Name>SolutionX.DomainEntities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51518</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51518/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
