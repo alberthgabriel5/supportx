@@ -68,6 +68,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ClientPK\createRequest.aspx" />
+    <Content Include="ClientPK\indexClient.aspx" />
     <Content Include="CordinatorPK\index.aspx" />
     <Content Include="css\animate.min.css" />
     <Content Include="css\bootstrap.min.css" />
@@ -142,9 +144,31 @@
     <Content Include="js\min\toucheffects-min.js" />
     <Content Include="js\min\video-min.js" />
     <Content Include="js\scripts.js" />
+    <Content Include="Login\login.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Client.Master.cs">
+      <DependentUpon>Client.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Client.Master.designer.cs">
+      <DependentUpon>Client.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ClientPK\createRequest.aspx.cs">
+      <DependentUpon>createRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClientPK\createRequest.aspx.designer.cs">
+      <DependentUpon>createRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClientPK\indexClient.aspx.cs">
+      <DependentUpon>indexClient.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClientPK\indexClient.aspx.designer.cs">
+      <DependentUpon>indexClient.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Cordinator.Master.cs">
       <DependentUpon>Cordinator.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -159,6 +183,13 @@
     <Compile Include="CordinatorPK\index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Login\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -172,6 +203,7 @@
     <Content Include="img\favicon\manifest.json" />
     <Content Include="js\.DS_Store" />
     <Content Include="js\min\.DS_Store" />
+    <Content Include="Client.Master" />
     <None Include="packages.config" />
     <Content Include="scss\.DS_Store" />
     <Content Include="scss\.sass-cache\a98e557b9da12e475a70ffaba41c5ccd5a2449c7\styles.scssc" />
