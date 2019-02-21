@@ -79,14 +79,15 @@
                                         <a class="page-scroll" href="#home">Home</a>
                                     </li>
                                     <li>
-                                        <a class="page-scroll" href="#about">Assign ticket coordinator</a>
+                                        <a class="page-scroll" href="#about">Assign request coordinator</a>
                                     </li>
                                     <li>
-                                        <a class="page-scroll" href="#services">Assign ticket employee</a>
+                                        <a class="page-scroll" href="#services">Assign request employee</a>
                                     </li>
                                     <li>
-                                        <a class="page-scroll" href="#team">Generate report</a>
+                                        <a class="page-scroll" href="#team">Assign priority request</a>
                                     </li>
+
                                 </ul>
                             </div>
                             <!-- navbar-collapse -->
@@ -133,9 +134,9 @@
                             <div class="slider-content text-center">
                                 <!-- layer 1 -->
                                 <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                                    <h2 class="title1">Assign ticket coordinator</h2>
+                                    <h2 class="title1">Assign request coordinator</h2>
                                 </div>
-                              
+
                                 <!-- layer 3 -->
 
                             </div>
@@ -152,18 +153,18 @@
                             <div class="slider-content">
                                 <!-- layer 1 -->
                                 <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                                    <h2 class="title1">Assign ticket employee</h2>
+                                    <h2 class="title1">Assign request employee</h2>
                                 </div>
-                                
-                                </div>
-                                <!-- layer 3 -->
 
                             </div>
+                            <!-- layer 3 -->
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <!-- End Slider Area -->
 
@@ -173,12 +174,56 @@
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <div class="section-headline text-center">
-                        <h2>Assign ticket coordinator</h2>
+                        <h2>Assign request coordinator</h2>
                     </div>
                 </div>
+                <asp:Table ID="Table2"
+                    GridLines="Both"
+                    HorizontalAlign="Center"
+                    Font-Names="Verdana"
+                    Font-Size="14pt"
+                    CellPadding="15"
+                    CellSpacing="0"
+                    runat="server"
+                    Style="width: 100%;">
+                    <asp:TableRow>
+                        <asp:TableHeaderCell ID="id" runat="server">ID</asp:TableHeaderCell>
+                        <asp:TableHeaderCell ID="name" runat="server">Compay name </asp:TableHeaderCell>
+                        <asp:TableHeaderCell ID="detail" runat="server">Detail</asp:TableHeaderCell>
+                        <asp:TableHeaderCell ID="email" runat="server">Email</asp:TableHeaderCell>
+                        <asp:TableHeaderCell ID="date" runat="server">Date</asp:TableHeaderCell>
+                        <asp:TableHeaderCell ID="manager" runat="server">Official manager</asp:TableHeaderCell>
+                        <asp:TableHeaderCell ID="priority" runat="server">Priority</asp:TableHeaderCell>
+                    </asp:TableRow>
+                </asp:Table>
+                <br />
+                <div class="section-headline text-center">
+                        <h2>List of coordinator</h2>
+                    </div>
+                <br />
+                <asp:Table ID="Table3"
+                    GridLines="Both"
+                    HorizontalAlign="Center"
+                    Font-Names="Verdana"
+                    Font-Size="14pt"
+                    CellPadding="15"
+                    CellSpacing="0"
+                    runat="server"
+                    Style="width: 100%;">
+                    <asp:TableRow>
+                        <asp:TableHeaderCell ID="idCoor" runat="server">ID</asp:TableHeaderCell>
+                        <asp:TableHeaderCell ID="nameCoor" runat="server">Employee name </asp:TableHeaderCell>
+                        <asp:TableHeaderCell ID="lastCoor" runat="server">Last name</asp:TableHeaderCell>
+                        <asp:TableHeaderCell ID="select" runat="server">Select</asp:TableHeaderCell>
+                    </asp:TableRow>
+                </asp:Table>
+                <br />
+                <div class="section-headline text-center">
+                            <button type="submit" class="btn btn-primary">Save</button>
+                        </div>
             </div>
             <div class="row">
-               
+
                 <div class="col-md-6 col-sm-6 col-xs-12">
                     <div class="well-middle">
                         <div class="single-well">
@@ -206,54 +251,79 @@
     </div>
 
     <!-- Start team Area -->
-    <div id="team" class="our-team-area area-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                    <div class="section-headline text-center">
-                        <h2>Generate reports</h2>
+    <form>
+        <div id="team" class="our-team-area area-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="section-headline text-center">
+                            <h1>Assign priority request</h1>
+                            <h2>Request attention list</h2>
+                        </div>
+                    </div>
+                </div>
+                <asp:Table ID="Table1"
+                    GridLines="Both"
+                    HorizontalAlign="Center"
+                    Font-Names="Verdana"
+                    Font-Size="14pt"
+                    CellPadding="15"
+                    CellSpacing="0"
+                    runat="server"
+                    Style="width: 100%;">
+                    <asp:TableRow>
+                        <asp:TableHeaderCell>ID</asp:TableHeaderCell>
+                        <asp:TableHeaderCell>Compay name</asp:TableHeaderCell>
+                        <asp:TableHeaderCell>Date-Hour</asp:TableHeaderCell>
+                        <asp:TableHeaderCell>Detail</asp:TableHeaderCell>
+                        <asp:TableHeaderCell>Category</asp:TableHeaderCell>
+                        <asp:TableHeaderCell>Priority</asp:TableHeaderCell>
+                    </asp:TableRow>
+                </asp:Table>
+                <br />
+                <div class="section-headline text-center">
+                            <button type="submit" class="btn btn-primary">Save</button>
+                        </div>
+            </div>
+        </div>
+    </form>
+    <footer>
+
+        <div class="footer-area-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="copyright text-center">
+                            <p>
+                                &copy; Copyright <strong>SupportX</strong>. All Rights Reserved
+             
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </footer>
 
-            
-                            <footer>
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
-                                <div class="footer-area-bottom">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-md-12 col-sm-12 col-xs-12">
-                                                <div class="copyright text-center">
-                                                    <p>
-                                                        &copy; Copyright <strong>SupportX</strong>. All Rights Reserved
-             
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </footer>
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/venobox/venobox.min.js"></script>
+    <script src="lib/knob/jquery.knob.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/parallax/parallax.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/nivo-slider/js/jquery.nivo.slider.js" type="text/javascript"></script>
+    <script src="lib/appear/jquery.appear.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
 
-                            <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <!-- Contact Form JavaScript File -->
+    <script src="contactform/contactform.js"></script>
 
-                            <!-- JavaScript Libraries -->
-                            <script src="lib/jquery/jquery.min.js"></script>
-                            <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-                            <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-                            <script src="lib/venobox/venobox.min.js"></script>
-                            <script src="lib/knob/jquery.knob.js"></script>
-                            <script src="lib/wow/wow.min.js"></script>
-                            <script src="lib/parallax/parallax.js"></script>
-                            <script src="lib/easing/easing.min.js"></script>
-                            <script src="lib/nivo-slider/js/jquery.nivo.slider.js" type="text/javascript"></script>
-                            <script src="lib/appear/jquery.appear.js"></script>
-                            <script src="lib/isotope/isotope.pkgd.min.js"></script>
-
-                            <!-- Contact Form JavaScript File -->
-                            <script src="contactform/contactform.js"></script>
-
-                            <script src="js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

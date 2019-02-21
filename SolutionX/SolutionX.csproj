@@ -98,6 +98,7 @@
     <Content Include="js\theme-script.js" />
     <Content Include="js\ui.js" />
     <Content Include="listTicket.aspx" />
+    <Content Include="login\login.aspx" />
     <Content Include="obj\Debug\SolutionX.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\SolutionX.dll" />
     <Content Include="obj\Debug\SolutionX.pdb" />
@@ -125,6 +126,13 @@
     </Compile>
     <Compile Include="listTicket.aspx.designer.cs">
       <DependentUpon>listTicket.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />

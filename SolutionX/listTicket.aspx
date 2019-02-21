@@ -127,7 +127,7 @@
                                 <li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
                                 <li><a href="createTicket.aspx">Create ticket</a></li>
                                 <li><a href="listTicket.aspx">List tickets</a></li>
-                                
+
                             </ul>
                         </div>
                     </nav>
@@ -143,12 +143,12 @@
 
 
         <div class="container">
-             <center>
+            <center>
         <h4>Lista de tickets</h4>
           </center>
-              <br />
-              <br />
-              <center>
+            <br />
+            <br />
+            <center>
                
                           
                       <asp:Table id="Table1" 

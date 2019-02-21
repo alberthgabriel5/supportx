@@ -192,7 +192,7 @@
                 </div>
             </div>
             <div class="row">
-               
+
                 <div class="col-md-6 col-sm-6 col-xs-12">
                     <div class="well-middle">
                         <div class="single-well">
@@ -225,7 +225,27 @@
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <div class="section-headline text-center">
-                        <h2>Generate reports</h2>
+                        <h2>Report of pending request  for attention</h2>
+
+                    </div>
+                    <div class="section-headline text-center">
+                        <asp:Table ID="Table1"
+                            GridLines="Both"
+                            HorizontalAlign="Center"
+                            Font-Names="Verdana"
+                            Font-Size="14pt"
+                            CellPadding="15"
+                            CellSpacing="0"
+                            runat="server"
+                            Style="width: 100%;">
+                            <asp:TableRow>
+                                <asp:TableHeaderCell>ID</asp:TableHeaderCell>
+                                <asp:TableHeaderCell>Company name</asp:TableHeaderCell>
+                                <asp:TableHeaderCell>Detail</asp:TableHeaderCell>
+                                <asp:TableHeaderCell>State</asp:TableHeaderCell>
+                                <asp:TableHeaderCell>Date</asp:TableHeaderCell>
+                            </asp:TableRow>
+                        </asp:Table>
                     </div>
                 </div>
             </div>
