@@ -103,6 +103,12 @@
     <Content Include="obj\Debug\SolutionX.pdb" />
     <Content Include="responsive.css" />
     <Content Include="style.css" />
+    <Content Include="viewAdm.aspx" />
+    <Content Include="viewAdmSuper.aspx" />
+    <Content Include="viewClient.aspx" />
+    <Content Include="viewCoordinator.aspx" />
+    <Content Include="viewCoordinatorTable.aspx" />
+    <Content Include="viewEmployee.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -124,6 +130,48 @@
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="viewAdm.aspx.cs">
+      <DependentUpon>viewAdm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewAdm.aspx.designer.cs">
+      <DependentUpon>viewAdm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewAdmSuper.aspx.cs">
+      <DependentUpon>viewAdmSuper.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewAdmSuper.aspx.designer.cs">
+      <DependentUpon>viewAdmSuper.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewClient.aspx.cs">
+      <DependentUpon>viewClient.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewClient.aspx.designer.cs">
+      <DependentUpon>viewClient.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewCoordinator.aspx.cs">
+      <DependentUpon>viewCoordinator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewCoordinator.aspx.designer.cs">
+      <DependentUpon>viewCoordinator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewCoordinatorTable.aspx.cs">
+      <DependentUpon>viewCoordinatorTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewCoordinatorTable.aspx.designer.cs">
+      <DependentUpon>viewCoordinatorTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewEmployee.aspx.cs">
+      <DependentUpon>viewEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewEmployee.aspx.designer.cs">
+      <DependentUpon>viewEmployee.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\.DS_Store" />
