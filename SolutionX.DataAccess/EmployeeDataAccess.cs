@@ -95,9 +95,21 @@ namespace SolutionX.DataAccess
             using (SqlCommand cmd = new SqlCommand("sp_funtionary_asigned_roll", connectionSupportX))
             {
                 cmd.CommandType = System.Data.CommandType.StoredProcedure;
-                
                 cmd.Parameters.AddWithValue("@idRole", role.idRole);
                 cmd.Parameters.AddWithValue("@idFuntionary", employee.id);
+                connectionSupportX.Open();
+                cmd.ExecuteNonQuery();
+                connectionSupportX.Close();
+            }
+        }
+        public void AssignRequestToManager(Ticket ticket)
+        {
+            SqlConnection connectionSupportX = DataAccess.GetSqlConnectionSupportX();
+            using (SqlCommand cmd = new SqlCommand("sp_cordinator_asigned", connectionSupportX))
+            {
+                cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue();
+                cmd.Parameters.AddWithValue();
                 connectionSupportX.Open();
                 cmd.ExecuteNonQuery();
                 connectionSupportX.Close();
@@ -106,6 +118,6 @@ namespace SolutionX.DataAccess
 
         
     }
-        
+    
 
 }

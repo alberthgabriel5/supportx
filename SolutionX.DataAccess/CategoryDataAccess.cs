@@ -26,5 +26,11 @@ namespace SolutionX.DataAccess
                 connectionSupportX.Close();
             }
         }
+        public List<Category> ListCategory()
+        {
+
+
+
+        }
     }
 }
