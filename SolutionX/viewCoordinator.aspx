@@ -66,7 +66,7 @@
                                     <span class="icon-bar"></span>
                                 </button>
                                 <!-- Brand -->
-                                <a class="navbar-brand page-scroll sticky-logo" href="viewCoordinator.aspx">
+                                <a class="navbar-brand page-scroll sticky-logo" href="index.html">
                                     <h1><span>Support</span>X</h1>
                                     <!-- Uncomment below if you prefer to use an image logo -->
                                     <!-- <img src="img/logo.png" alt="" title=""> -->
@@ -83,9 +83,6 @@
                                     </li>
                                     <li>
                                         <a class="page-scroll" href="#team">Generate report</a>
-                                    </li>
-                                    <li>
-                                        <a >Log out</a>
                                     </li>
                                 </ul>
                             </div>
