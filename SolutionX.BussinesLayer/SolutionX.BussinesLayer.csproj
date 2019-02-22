@@ -41,6 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CategoryBussines.cs" />
+    <Compile Include="EmployeeBussines.cs" />
+    <Compile Include="PriorityBussines.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ticketBussines.cs" />
   </ItemGroup>
