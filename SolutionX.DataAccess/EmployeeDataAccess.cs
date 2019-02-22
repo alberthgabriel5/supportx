@@ -30,8 +30,8 @@ namespace SolutionX.DataAccess
                 {
                     employee.id = Convert.ToInt32(reader["idEmployee"].ToString());
                 }
-                    //if (employee.id != -5)
-                    //{
+                    if (employee.id != -5)
+                    {
                         SqlConnection connectionSupportX = DataAccess.GetSqlConnectionSupportX();
                         SqlDataReader readerSupportX;
                         using (SqlCommand cmdSupportX = new SqlCommand("sp_select_employee_id", connectionSupportX))
@@ -80,7 +80,7 @@ namespace SolutionX.DataAccess
                                 connectionSupportX.Close();
                             }
                         }
-                    //}
+                    }
                 Console.WriteLine("Resultado de vaaaaaaalorrrrrrrr: " + employee.id);
 
                     connectionEmployee.Close();
@@ -89,15 +89,15 @@ namespace SolutionX.DataAccess
                        
         }
 
-        public void AssignRole(Employee employee, Role role)
+        public void AssignRole(Role role, Employee employee)
         {
             SqlConnection connectionSupportX = DataAccess.GetSqlConnectionSupportX();
             using (SqlCommand cmd = new SqlCommand("sp_funtionary_asigned_roll", connectionSupportX))
             {
                 cmd.CommandType = System.Data.CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@idCode", role.idRole);
+                
+                cmd.Parameters.AddWithValue("@idRole", role.idRole);
                 cmd.Parameters.AddWithValue("@idFuntionary", employee.id);
-
                 connectionSupportX.Open();
                 cmd.ExecuteNonQuery();
                 connectionSupportX.Close();

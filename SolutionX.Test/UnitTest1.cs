@@ -61,12 +61,28 @@ namespace SolutionX.Test
             Employee employee1 = new Employee();
             employee1.Role = new Role();
             
-            employee1.nickName = "qa";
+            employee1.nickName = "yyyyya";
             employee1.pass = "qaqa";
 
             Console.WriteLine("rol del empleado " +employee.VerifyUser(employee1));
             
             //Console.WriteLine("Hooooooooooooooooooooola");
+        }
+
+        [TestMethod]
+        public void AssignRole()
+        {
+            EmployeeDataAccess employee = new EmployeeDataAccess();
+            Employee employee1 = new Employee();
+            Role role = new Role();
+
+            role.idRole = 1;
+            employee1.id = 3;
+            
+
+            employee.AssignRole(role,employee1);
+            
+
         }
     }
 }
