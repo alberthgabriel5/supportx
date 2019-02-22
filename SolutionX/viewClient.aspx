@@ -185,6 +185,7 @@
                                 <h2>Create ticket</h2>
                                 <h3>Description</h3>
                                 <textarea id="txDesc" cols="20" rows="2"></textarea>
+                                <input id="File1" type="file" />
                                 <input id="Button1" type="button" value="Save" />
                             </div>
                         </div>
