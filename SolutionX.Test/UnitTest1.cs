@@ -4,6 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SolutionX.DataAccess;
 using SolutionX.DomainEntities;
 
+
 namespace SolutionX.Test
 {
     [TestClass]
@@ -15,7 +16,7 @@ namespace SolutionX.Test
         {
 
             Ticket ticket = new Ticket();
-            TicketData ticketData = new TicketData();
+            TicketDataAccess ticketData = new TicketDataAccess();
 
             ticket.description = "Actualizacion";
             ticket.idCostumer = 1;
@@ -27,7 +28,7 @@ namespace SolutionX.Test
         public void ViewTicket()
         {
             
-            TicketData ticketData = new TicketData();
+            TicketDataAccess ticketData = new TicketDataAccess();
 
             List<Ticket> ticketsList = new List<Ticket>();
             ticketsList= ticketData.ViewTicket();
@@ -37,6 +38,35 @@ namespace SolutionX.Test
             {
                 Console.WriteLine("LA DESCRIPCION DEL TICKET ES: " + ticketsList[i].description);
             }
+        }
+        [TestMethod]
+        public void SearchTicket()
+        {
+            Ticket ticket = new Ticket();
+            ticket.idCode = 1;
+            TicketDataAccess ticketData = new TicketDataAccess();
+            List<Ticket> ticketList = new List<Ticket>();
+            ticketList = ticketData.SearchTicket(ticket);
+
+            for(int i = 0; i < ticketList.Count; i++)
+            {
+                Console.WriteLine("EL ID DEL TICKET ES: " + ticketList[i].idCode);
+                Console.WriteLine("descripcion" + ticketList[i].description);
+            }
+        }
+        [TestMethod]
+        public void VerifyUser()
+        {
+            EmployeeDataAccess employee = new EmployeeDataAccess();
+            Employee employee1 = new Employee();
+            employee1.Role = new Role();
+            
+            employee1.nickName = "qa";
+            employee1.pass = "qaqa";
+
+            Console.WriteLine("rol del empleado " +employee.VerifyUser(employee1));
+            
+            //Console.WriteLine("Hooooooooooooooooooooola");
         }
     }
 }

@@ -13,7 +13,7 @@ namespace SolutionX.BussinesLayer
 {
     class ticketBussines
     {
-        TicketData ticketData = new TicketData();
+        TicketDataAccess ticketData = new TicketDataAccess();
         List<Ticket> ticketsList = new List<Ticket>();
 
         public void CreateTicket(Ticket ticket)
@@ -23,6 +23,13 @@ namespace SolutionX.BussinesLayer
         public List<Ticket> ViewTicket()
         {
             ticketsList=ticketData.ViewTicket();
+            return ticketsList;
+
+        }
+        public List<Ticket> SearchTicket(Ticket ticket)
+        {
+
+            ticketsList = ticketData.SearchTicket(ticket);
             return ticketsList;
 
         }

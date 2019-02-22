@@ -7,7 +7,7 @@ namespace SolutionX.DomainEntities
 {
     public class Role
     {
-        public int idRole { get; set; }
-        public string roleName { get; set; }
+        public int idRole { get; set; } = 0;
+        public string roleName { get; set; } = null;
     }
 }

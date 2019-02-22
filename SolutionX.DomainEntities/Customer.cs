@@ -5,7 +5,7 @@ using System.Web;
 
 namespace SolutionX.DomainEntities
 {
-    public class Costumer
+    public class Customer
     {
         public int id { get; set; }
         public string name { get; set; }
