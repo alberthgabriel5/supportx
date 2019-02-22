@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SolutionX.DataAccess;
+using SolutionX.DomainEntities;
 using System.Web;
 
 

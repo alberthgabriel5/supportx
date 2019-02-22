@@ -125,9 +125,11 @@
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav">
                                 <li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
-                                <li><a href="blog.html">Create ticket</a></li>
-                                <li><a href="blog-detail.html">List tickets</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+
+                                <li><a href="createTicket.aspx">Create ticket</a></li>
+                                <li><a href="listTicket.aspx">List tickets</a></li>
+
+
                             </ul>
                         </div>
                     </nav>
@@ -143,21 +145,15 @@
 
 
         <div class="container">
-             <center>
+            <center>
         <h4>Lista de tickets</h4>
           </center>
-              <br />
-              <br />
-              <center>
-               <table id="ticket"  style="width:100%;" title="tickets" class="table -responsive">
-                    <tr>
-                  <th>Codigo</th>
-                <th>Estate </th>
-                <th>Hour</th>
-                <th>Company</th>            
-                
-                    </tr>
-                   <center>
+
+            <br />
+            <br />
+            <center>
+               
+
                           
                       <asp:Table id="Table1" 
         GridLines="Both" 
