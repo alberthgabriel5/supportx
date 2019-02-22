@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Login V15</title>
+	<title>Login Support X</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -64,9 +64,7 @@
 					
 					</div>
 
-					<div class="container-login100-form-btn">
-                        <asp:Button ID="Button1" runat="server" Text="Button" OnClick="ButttonCLick" />
-					</div>
+					
 				</form>
 			</div>
 		</div>

@@ -66,7 +66,7 @@
                                     <span class="icon-bar"></span>
                                 </button>
                                 <!-- Brand -->
-                                <a class="navbar-brand page-scroll sticky-logo" href="index.html">
+                                <a class="navbar-brand page-scroll sticky-logo" href="viewAdm.aspx">
                                     <h1><span>Support</span>X</h1>
                                     <!-- Uncomment below if you prefer to use an image logo -->
                                     <!-- <img src="img/logo.png" alt="" title=""> -->
@@ -90,19 +90,8 @@
                                     <li>
                                         <a class="page-scroll" href="#portfolio">Assign role</a>
                                     </li>
-
-                                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Drop Down<span class="caret"></span></a>
-                                        <ul class="dropdown-menu" role="menu">
-                                            <li><a href="#">Drop Down 1</a></li>
-                                            <li><a href="#">Drop Down 2</a></li>
-                                        </ul>
-                                    </li>
-
                                     <li>
-                                        <a class="page-scroll" href="#blog">Blog</a>
-                                    </li>
-                                    <li>
-                                        <a class="page-scroll" href="#contact">Contact</a>
+                                        <a >Log out</a>
                                     </li>
                                 </ul>
                             </div>

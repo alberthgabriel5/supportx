@@ -66,7 +66,7 @@
                                     <span class="icon-bar"></span>
                                 </button>
                                 <!-- Brand -->
-                                <a class="navbar-brand page-scroll sticky-logo" href="index.html">
+                                <a class="navbar-brand page-scroll sticky-logo" href="viewAdmSuper.aspx">
                                     <h1><span>Support</span>X</h1>
                                     <!-- Uncomment below if you prefer to use an image logo -->
                                     <!-- <img src="img/logo.png" alt="" title=""> -->
@@ -92,6 +92,9 @@
                                     </li>
                                     <li>
                                         <a class="page-scroll" href="#searchAdm">Search administrator</a>
+                                    </li>
+                                    <li>
+                                        <a >Log out</a>
                                     </li>
                                 </ul>
                             </div>
