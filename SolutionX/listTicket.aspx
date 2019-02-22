@@ -125,8 +125,10 @@
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav">
                                 <li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+
                                 <li><a href="createTicket.aspx">Create ticket</a></li>
                                 <li><a href="listTicket.aspx">List tickets</a></li>
+
 
                             </ul>
                         </div>
@@ -146,10 +148,12 @@
             <center>
         <h4>Lista de tickets</h4>
           </center>
+
             <br />
             <br />
             <center>
                
+
                           
                       <asp:Table id="Table1" 
         GridLines="Both" 
@@ -159,16 +163,12 @@
         CellPadding="15" 
         CellSpacing="0" 
         Runat="server"
-                           style="width:100%;">
-                       <asp:TableRow>
-        <asp:TableHeaderCell>ID</asp:TableHeaderCell>
-        <asp:TableHeaderCell>Status</asp:TableHeaderCell>
-                           <asp:TableHeaderCell>Date-Hour</asp:TableHeaderCell>
-                           <asp:TableHeaderCell>Client</asp:TableHeaderCell>
-    </asp:TableRow>
-</asp:Table>
+                           style="width:100%;"/>
                    
-                   
+                   </center>
+                
+                                                        
+                </table>
     
      
     

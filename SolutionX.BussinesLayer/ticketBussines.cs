@@ -1,18 +1,18 @@
 ﻿using SolutionX.DomainEntities;
 using System;
-
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SolutionX.DataAccess;
+using SolutionX.DomainEntities;
 using System.Web;
 
 
 namespace SolutionX.BussinesLayer
 {
-   public class ticketBussines
+    class ticketBussines
     {
         TicketData ticketData = new TicketData();
         List<Ticket> ticketsList = new List<Ticket>();

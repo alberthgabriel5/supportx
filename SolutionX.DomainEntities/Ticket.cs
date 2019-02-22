@@ -7,15 +7,15 @@ namespace SolutionX.DomainEntities
 {
     public class Ticket
     {
-        public string idCode { get; set; } = null; 
-        public string description { get; set; } = null;
-        public string priority { get; set; } = null;
-        public string stateTicket { get; set; } = null;
+        public string idCode { get; set; }
+        public string description { get; set; }
+        public string priority { get; set; }
+        public string stateTicket { get; set; }
         public DateTime dateCreate { get; set; }
-        public string idCategory { get; set; } = null;
-        public int idCostumer { get; set; } = 0;
-        public string idCoordinator { get; set; } = null;
-        public string idEmployee { get; set; } = null;
-
+        public string idCategory { get; set; }
+        public int idCostumer { get; set; }
+        public string idCoordinator { get; set; }
+        public string idEmployee { get; set; } 
+        
     }
 }
