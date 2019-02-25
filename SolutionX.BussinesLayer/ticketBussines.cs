@@ -29,10 +29,12 @@ namespace SolutionX.BussinesLayer
         }
         public List<Ticket> SearchTicket(Ticket ticket)
         {
-
             ticketsList = ticketData.SearchTicket(ticket);
             return ticketsList;
-
         }
-    }
+        public List<Ticket> AssignRequestToManager(Ticket ticket)
+        {
+            ticketsList = ticketData.AssignRequestToManager(ticket);
+            return ticketsList;
+        }
 }

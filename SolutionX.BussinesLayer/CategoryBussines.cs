@@ -15,5 +15,10 @@ namespace SolutionX.BussinesLayer
         {
             categoryDataAccess.CreateCategory(category);
         }
+        public List<Category> ListCategory()
+        {
+            return categoryDataAccess.ListCategory();
+        }
     }
+
 }

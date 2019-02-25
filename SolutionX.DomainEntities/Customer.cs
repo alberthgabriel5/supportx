@@ -7,9 +7,12 @@ namespace SolutionX.DomainEntities
 {
     public class Customer
     {
-        public int id { get; set; }
-        public string name { get; set; }
-        
-        
+        public int id { get; set; } = 0;
+        public string name { get; set; }=null;
+        public string lastName { get; set; } = null;
+        public string nickName { get; set; } = null;
+        public string pass { get; set; } = null;
+
+
     }
 }

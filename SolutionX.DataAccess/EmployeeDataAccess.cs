@@ -102,19 +102,7 @@ namespace SolutionX.DataAccess
                 connectionSupportX.Close();
             }
         }
-        public void AssignRequestToManager(Ticket ticket)
-        {
-            SqlConnection connectionSupportX = DataAccess.GetSqlConnectionSupportX();
-            using (SqlCommand cmd = new SqlCommand("sp_cordinator_asigned", connectionSupportX))
-            {
-                cmd.CommandType = System.Data.CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue();
-                cmd.Parameters.AddWithValue();
-                connectionSupportX.Open();
-                cmd.ExecuteNonQuery();
-                connectionSupportX.Close();
-            }
-        }
+       
 
         
     }

@@ -19,7 +19,7 @@ namespace SolutionX.Test
             TicketDataAccess ticketData = new TicketDataAccess();
 
             ticket.description = "Actualizacion";
-            ticket.idCostumer = 1;
+            ticket.idCustomer = 1;
 
             ticketData.CreateTicket(ticket);    
         }
@@ -70,6 +70,22 @@ namespace SolutionX.Test
         }
 
         [TestMethod]
+        public void VerifyUserCustomer()
+        {
+            CustomerDataAcces customerDataAcces = new CustomerDataAcces();
+            EmployeeDataAccess employee = new EmployeeDataAccess();
+            Employee employee1 = new Employee();
+            employee1.Role = new Role();
+
+            employee1.nickName = "yyyyya";
+            employee1.pass = "qaqa";
+
+            Console.WriteLine("rol del empleado " + employee.VerifyUser(employee1));
+
+            //Console.WriteLine("Hooooooooooooooooooooola");
+        }
+
+        [TestMethod]
         public void AssignRole()
         {
             EmployeeDataAccess employee = new EmployeeDataAccess();
@@ -83,6 +99,36 @@ namespace SolutionX.Test
             employee.AssignRole(role,employee1);
             
 
+        }
+        [TestMethod]
+        public List<Category> ListCategory()
+        {
+            CategoryDataAccess categoryDataAccess = new CategoryDataAccess();
+            List < Category >categoryList= new List<Category>();
+            categoryList= categoryDataAccess.ListCategory();
+
+            for (int i = 0; i < categoryList.Count; i++)
+            {
+                Console.WriteLine("EL ID DE LA CATEGORIA ES: " + categoryList[i].idCategory);
+                Console.WriteLine("EL NOMBRE DE LA CATEGORIA ES: " + categoryList[i].name);
+            }
+
+            return categoryList;
+        }
+        [TestMethod]
+        public List<Priority> ListPriority()
+        {
+            PriorityDataAccess priorityDataAccess = new PriorityDataAccess();
+            List<Priority> priorityList = new List<Priority>();
+            priorityList = priorityDataAccess.ListPriority();
+
+            for (int i = 0; i < priorityList.Count; i++)
+            {
+                Console.WriteLine("EL ID DE LA CATEGORIA ES: " + priorityList[i].idPriority);
+                Console.WriteLine("EL NOMBRE DE LA CATEGORIA ES: " + priorityList[i].namePriority);
+            }
+
+            return priorityList;
         }
     }
 }

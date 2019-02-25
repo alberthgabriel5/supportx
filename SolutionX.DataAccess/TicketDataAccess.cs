@@ -24,7 +24,7 @@ namespace SolutionX.DataAccess
             {
                 cmd.CommandType = System.Data.CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@description",ticket.description);
-                cmd.Parameters.AddWithValue("@idCostumer", ticket.idCostumer);
+                cmd.Parameters.AddWithValue("@idCustomer", ticket.idCustomer);
 
                 connectionSupportX.Open();
                 cmd.ExecuteNonQuery();
@@ -54,7 +54,7 @@ namespace SolutionX.DataAccess
                     ticket.priority = Convert.ToInt32(reader["idPriority"].ToString());
                     ticket.dateCreate= Convert.ToDateTime(reader["datecreate"].ToString());
                     ticket.idCategory = Convert.ToInt32(reader["idCategory"].ToString());
-                    ticket.idCostumer = Convert.ToInt32(reader["idCostumer"].ToString());
+                    ticket.idCustomer = Convert.ToInt32(reader["idCostumer"].ToString());
                     ticket.idCoordinator = Convert.ToInt32( reader["idCordinator"].ToString());
                     ticket.idEmployee = Convert.ToInt32(reader["idEmployee"].ToString());
 
@@ -83,7 +83,7 @@ namespace SolutionX.DataAccess
                     ticket.priority = Convert.ToInt32(reader["idPriority"].ToString());
                     ticket.dateCreate = Convert.ToDateTime(reader["datecreate"].ToString());
                     ticket.idCategory = Convert.ToInt32(reader["idCategory"].ToString());
-                    ticket.idCostumer = Convert.ToInt32(reader["idCostumer"].ToString());
+                    ticket.idCustomer = Convert.ToInt32(reader["idCostumer"].ToString());
                     ticket.idCoordinator = Convert.ToInt32(reader["idCordinator"].ToString());
                     ticket.idEmployee = Convert.ToInt32(reader["idEmployee"].ToString());
 
@@ -93,6 +93,36 @@ namespace SolutionX.DataAccess
 
             return ticketsList;
         }
+        public List<Ticket> AssignRequestToManager(Ticket ticket)
+        {
+            SqlConnection connectionSupportX = DataAccess.GetSqlConnectionSupportX();
+            SqlDataReader reader;
+            using (SqlCommand cmd = new SqlCommand("sp_cordinator_asigned", connectionSupportX))
+            {
+                cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@idCode", ticket.idCode);
+                cmd.Parameters.AddWithValue("@idCordinator", ticket.idCoordinator);
+                cmd.Parameters.AddWithValue("@idPriority", ticket.priority);
+                cmd.Parameters.AddWithValue("@idCategory", ticket.idCategory);
+                cmd.Parameters.AddWithValue("@text",ticket.description);
 
+
+                reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    ticket.idCode = Convert.ToInt32(reader["idCode"].ToString());
+                    ticket.idCoordinator = Convert.ToInt32(reader["idCordinator"].ToString());
+                    ticket.priority = Convert.ToInt32(reader["idPriority"].ToString());
+                    ticket.idCategory = Convert.ToInt32(reader["idCategory"].ToString());
+                    ticket.description = reader["text"].ToString();
+                    ticketsList.Add(ticket);
+                }
+
+                connectionSupportX.Open();
+                cmd.ExecuteNonQuery();
+                connectionSupportX.Close();
+                return ticketsList;
+            }
+        }
     }
 }
